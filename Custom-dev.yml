@@ -1,0 +1,12 @@
+prefix: ${self:provider.stage}-${self:service}
+
+render:
+    handler: ${self:custom.prefix}-renderHandler
+    bucket: ${self:provider.stage}-${self:custom.prefix}
+    arn: "arn:aws:lambda:${opt:region, self:provider.region}:*:function:${self:custom.render.handler}"
+
+SENTRY:
+    dns: "https://4d2c372ee9014c62a70e594cf90ce16b@o414478.ingest.sentry.io/5402891" 
+
+serverless-offline:   
+    port: 4004
