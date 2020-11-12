@@ -1,28 +1,117 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+body {
+  margin: 20px;
   padding: 20px;
-  color: white;
+  font-family: Poppins;
 }
 
-.App-title {
-  font-size: 1.5em;
+select {
+  background: #FFFFFF;
+  border: 1px solid #DDE3ED;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* margin: 0px 10px; */
+  padding: 15px 5px;
+  /* max-width: 328px; */
+  width: 288px;
 }
 
-.App-intro {
-  font-size: large;
+select:focus {
+  background: #FFFFFF;
+  border: 2px solid #1F61F7;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+select:focus ~ label, select:not([value=""]):valid ~ label {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1F61F7;
+}
+
+label {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #AFBACC;
+}
+
+button {
+  /* No se ve bien con eso */
+  /* display: flex;
+  flex-direction: row;
+  padding: 8px 32px; */
+  width: 113px;
+  height: 48px;
+  background: #1F61F7;
+  box-shadow: 0px 10px 16px rgba(18, 25, 84, 0.07);
+  border-radius: 1000px;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.card {
+  width: 328px;
+  background: #FFFFFF;
+  border: 1px solid #DDE3ED;
+  border-radius: 8px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: -webkit-inline-box;
+  clear: both;
+}
+
+.card-title.titulo {
+  max-width: 216px;
+  max-height: 24px;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #060B25;
+}
+
+.card-text.parrafo {
+  max-height: 24px;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #58606E;
+}
+
+.card-label {
+  width: 52px;
+  height: 20px;
+  background: #1F61F7;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  color: #F5F7FA;
+  position: relative;
+  text-align: center;
+  margin-left: 20px;
+  bottom: 31px;
+}
+
+.card-img-top {
+  max-width: 328px;
+  max-height: 192px;
 }
