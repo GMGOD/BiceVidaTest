@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/App.css';
 
-import { Plan } from '../components/plan'
+import { Seguro } from '../components/seguro'
 
 import {
   BrowserRouter as Router,
@@ -16,7 +16,7 @@ export const Index = () => {
     <div className="App">
       <Router>
         <Switch>
-            <Route exact path="/" render={(props) => <Plan {...props}/>}/>
+            <Route exact path="/" render={(props) => <Seguro {...props}/>}/>
         </Switch>
       </Router>
     </div>
