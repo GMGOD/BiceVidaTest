@@ -4,6 +4,11 @@ body {
   font-family: Poppins;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
 select {
   background: #FFFFFF;
   border: 1px solid #DDE3ED;
@@ -67,12 +72,6 @@ button {
   padding: 1.25rem 1rem 3rem;
 }
 
-.clearfix:after {
-  content: "";
-  display: -webkit-inline-box;
-  clear: both;
-}
-
 .card-title.titulo {
   max-width: 216px;
   max-height: 24px;
@@ -85,7 +84,6 @@ button {
 }
 
 .card-text.parrafo {
-  max-height: 24px;
   font-family: Poppins;
   font-weight: normal;
   font-size: 14px;

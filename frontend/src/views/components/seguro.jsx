@@ -117,7 +117,7 @@ export const Seguro = () => {
             </select>
           </div>
         </div>
-        <div className="col">
+        <div className="col text-center">
           <button onClick={e => buscarSeguro(e)}>Buscar!</button>
         </div>
       </div>
@@ -134,7 +134,7 @@ export const Seguro = () => {
               <label className="card-label">$ {formatMoney(seguro.price)}</label>
             </div>
             
-            <div className="card-body clearfix">
+            <div className="card-body">
               <h5 className="card-title titulo">{seguro.name}</h5>
               <p className="card-text parrafo">{seguro.description}</p>
             </div>
